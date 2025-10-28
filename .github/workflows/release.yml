@@ -20,22 +20,22 @@ jobs:
       - name: ☁️ Checkout repository
         uses: actions/checkout@v4
 
-      - name: 🧰 Setup .NET SDK
+      - name: 🔧 Setup .NET SDK
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
 
       - name: 📦 Restore dependencies
-        run: dotnet restore
+        run: dotnet restore ElevatedTutorsWebsite/ElevatedTutorsWebsite.csproj
 
       - name: 🧪 Build project
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build ElevatedTutorsWebsite/ElevatedTutorsWebsite.csproj --configuration Release --no-restore
 
       - name: 🧪 Run tests
-        run: dotnet test --no-build --verbosity normal
+        run: dotnet test ElevatedTutorsWebsite/ElevatedTutorsWebsite.csproj --no-build --verbosity normal
 
       - name: 📦 Publish app
-        run: dotnet publish -c Release -o ./publish
+        run: dotnet publish ElevatedTutorsWebsite/ElevatedTutorsWebsite.csproj -c Release -o ./publish
 
       - name: 📂 Upload published app
         uses: actions/upload-artifact@v4
@@ -51,14 +51,14 @@ jobs:
       - name: ☁️ Checkout repository
         uses: actions/checkout@v4
 
-      - name: 🔧 Setup Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: 📦 Download published app
+      - name: 📂 Download published app
         uses: actions/download-artifact@v4
         with:
           name: dotnet-publish
           path: ./publish
+
+      - name: 🔧 Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3
 
       - name: 🧩 Docker metadata
         id: meta
