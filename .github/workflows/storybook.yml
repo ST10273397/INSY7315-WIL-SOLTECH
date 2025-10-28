@@ -1,4 +1,4 @@
-name: Publish stories if changed
+name: ElevatedTutorsWebsite
 
 on:
   push:
