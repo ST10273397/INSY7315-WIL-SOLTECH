@@ -55,9 +55,6 @@ namespace ElevatedTutorsWebsite.Migrations
                     b.Property<int>("SubjectId")
                         .HasColumnType("int");
 
-                    b.Property<int>("TotalSessions")
-                        .HasColumnType("int");
-
                     b.Property<int>("TutorUserId")
                         .HasColumnType("int");
 
@@ -80,6 +77,9 @@ namespace ElevatedTutorsWebsite.Migrations
                     b.Property<decimal>("Marks")
                         .HasPrecision(5, 2)
                         .HasColumnType("decimal(5,2)");
+
+                    b.Property<int>("MaxSessions")
+                        .HasColumnType("int");
 
                     b.Property<string>("ParentEmail")
                         .IsRequired()

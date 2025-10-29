@@ -3,44 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\elevatedtutorswebsite.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:elevatedtutorswebsite.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\models\\tutoruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:models\\tutoruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\models\\studentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:models\\studentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\models\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:models\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\models\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:models\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\models\\tutoruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:models\\tutoruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutorswebsite\\models\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CB249FD-BA84-4D96-8FC2-C36219B32690}|ElevatedTutorsWebsite.csproj|solutionrelative:models\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,129 +63,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAwwBYAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T11:37:40.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAADMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-28T11:31:47.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T11:31:43.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Submission.cs",
-              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\Submission.cs",
-              "RelativeDocumentMoniker": "Models\\Submission.cs",
-              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\Submission.cs",
-              "RelativeToolTip": "Models\\Submission.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAswCYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T16:42:07.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Session.cs",
-              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\Session.cs",
-              "RelativeDocumentMoniker": "Models\\Session.cs",
-              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\Session.cs",
-              "RelativeToolTip": "Models\\Session.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAswBoAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T16:50:42.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TutorUser.cs",
-              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\TutorUser.cs",
-              "RelativeDocumentMoniker": "Models\\TutorUser.cs",
-              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\TutorUser.cs",
-              "RelativeToolTip": "Models\\TutorUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T17:56:26.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AdminUser.cs",
-              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\AdminUser.cs",
-              "RelativeDocumentMoniker": "Models\\AdminUser.cs",
-              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\AdminUser.cs",
-              "RelativeToolTip": "Models\\AdminUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T16:38:42.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Subject.cs",
-              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\Subject.cs",
-              "RelativeDocumentMoniker": "Models\\Subject.cs",
-              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\Subject.cs",
-              "RelativeToolTip": "Models\\Subject.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA6wB0AAACmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T16:46:52.575Z",
+              "WhenOpened": "2025-10-29T02:23:55.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StudentUser.cs",
-              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\StudentUser.cs",
-              "RelativeDocumentMoniker": "Models\\StudentUser.cs",
-              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\StudentUser.cs",
-              "RelativeToolTip": "Models\\StudentUser.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB4AAAAUAAAAAAAAAA==",
+              "Title": "ElevatedTutorsWebsite",
+              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\ElevatedTutorsWebsite.csproj",
+              "RelativeDocumentMoniker": "ElevatedTutorsWebsite.csproj",
+              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\ElevatedTutorsWebsite.csproj",
+              "RelativeToolTip": "ElevatedTutorsWebsite.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-29T02:08:44.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminUser.cs",
+              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\AdminUser.cs",
+              "RelativeDocumentMoniker": "Models\\AdminUser.cs",
+              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\AdminUser.cs",
+              "RelativeToolTip": "Models\\AdminUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T17:31:56.42Z",
+              "WhenOpened": "2025-10-29T01:56:47.012Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAQwCQAAAABAAAAAAAAAA==",
+              "Title": "Session.cs",
+              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\Session.cs",
+              "RelativeDocumentMoniker": "Models\\Session.cs",
+              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\Session.cs",
+              "RelativeToolTip": "Models\\Session.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA3wCMAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T17:25:27.799Z",
+              "WhenOpened": "2025-10-29T01:02:32.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentUser.cs",
+              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\StudentUser.cs",
+              "RelativeDocumentMoniker": "Models\\StudentUser.cs",
+              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\StudentUser.cs",
+              "RelativeToolTip": "Models\\StudentUser.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T01:02:13.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TutorUser.cs",
+              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\TutorUser.cs",
+              "RelativeDocumentMoniker": "Models\\TutorUser.cs",
+              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Models\\TutorUser.cs",
+              "RelativeToolTip": "Models\\TutorUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T01:01:54.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwDMAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T00:37:26.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutorsWebsite\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T00:17:18.513Z",
               "EditorCaption": ""
             }
           ]

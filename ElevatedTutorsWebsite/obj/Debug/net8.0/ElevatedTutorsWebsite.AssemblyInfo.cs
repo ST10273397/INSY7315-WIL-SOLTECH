@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElevatedTutorsWebsite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d31ca3b9343ca259e48b9e7f0c8793852730db3b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49411e92811b2b40555a7a9d11a1088baa774b31")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElevatedTutorsWebsite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElevatedTutorsWebsite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

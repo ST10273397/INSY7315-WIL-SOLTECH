@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ElevatedTutorsWebsite.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>View</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tutors</th>
+            <th>Students</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var tutors = Model.Where(u => u.Role == "Tutor").ToList();
+            var students = Model.Where(u => u.Role == "Student").ToList();
+            int rowCount = Math.Max(tutors.Count, students.Count);
+        }
+
+        @for (int i = 0; i < rowCount; i++)
+        {
+            <tr>
+                <td>
+                    @if (i < tutors.Count)
+                    {
+                        @tutors[i].FirstName @tutors[i].Surname
+                        <a asp-action="Edit" asp-route-id="@tutors[i].UserId" class="btn btn-sm btn-warning ms-2">Edit</a>
+                    }
+                </td>
+                <td>
+                    @if (i < students.Count)
+                    {
+                        @students[i].FirstName @students[i].Surname
+                        <a asp-action="Edit" asp-route-id="@students[i].UserId" class="btn btn-sm btn-warning ms-2">Edit</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

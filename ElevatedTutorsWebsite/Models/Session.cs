@@ -9,10 +9,7 @@ namespace ElevatedTutorsWebsite.Models
         public int SessionId { get; set; }
 
         [Required]
-        public int SessionNumber { get; set; } // e.g. 3 (current session)
-
-        [Required]
-        public int TotalSessions { get; set; } // e.g. 10 (total booked)
+        public int SessionNumber { get; set; } = 0;// e.g. 3 (current session)
 
         [Required]
         public DateTime SessionDate { get; set; }
@@ -36,12 +33,11 @@ namespace ElevatedTutorsWebsite.Models
 
         public Session() { }
 
-        public Session(int sessionId, int sessionNumber, int totalSessions, DateTime sessionDate,
+        public Session(int sessionId, int sessionNumber, DateTime sessionDate,
                        SessionStatus status, int subjectId, int studentUserId, int tutorUserId)
         {
             SessionId = sessionId;
             SessionNumber = sessionNumber;
-            TotalSessions = totalSessions;
             SessionDate = sessionDate;
             Status = status;
             SubjectId = subjectId;
