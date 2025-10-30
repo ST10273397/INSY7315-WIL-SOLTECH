@@ -1,0 +1,158 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using ElevatedTutors.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    var user = await UserManager.GetUserAsync(User);
+    var roles = user != null ? await UserManager.GetRolesAsync(user) : new List<string>();
+    string role = roles.FirstOrDefault() ?? "Visitor";
+
+    // Base colors per role (semi-transparent for blur blend)
+    string baseColor = role switch
+    {
+        "Admin" => "rgba(33, 37, 41, 0.8)",     // dark
+        "Tutor" => "rgba(13, 110, 253, 0.8)",   // blue
+        "Student" => "rgba(25, 135, 84, 0.8)",  // green
+        _ => "rgba(255, 255, 255, 0.8)"         // white
+    };
+
+    string textColor = role == "Visitor" ? "navbar-light" : "navbar-dark";
+}
+
+<!-- Navbar Styling -->
+<style>
+    .navbar-custom {
+        background-color: rgba(28, 30, 34, 0.5);
+        transition: background-color 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
+    }
+
+    .navbar-scrolled {
+        background-color: var(--navbar-color);
+        backdrop-filter: blur(12px) saturate(180%);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .nav-link {
+        transition: color 0.2s ease, opacity 0.2s ease;
+    }
+
+        .nav-link:hover {
+            opacity: 0.8;
+        }
+
+    body {
+        padding-top: 70px; /* prevent overlap from fixed navbar */
+    }
+
+    /* Optional: make navbar background slightly dark for visitors for readability */
+    .navbar-light.navbar-custom {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+</style>
+
+<nav id="roleNavbar" class="navbar navbar-expand-lg fixed-top navbar-custom @textColor">
+    <div class="container-fluid">
+        <!-- BRAND (LEFT) -->
+        @if (role == "Admin")
+        {
+            <a class="navbar-brand" asp-controller="Admin" asp-action="Dashboard">ELEVATED TUTORS</a>
+        }
+        else if (role == "Tutor")
+        {
+            <a class="navbar-brand" asp-controller="Tutor" asp-action="Dashboard">ELEVATED TUTORS</a>
+        }
+        else if (role == "Student")
+        {
+            <a class="navbar-brand" asp-controller="Student" asp-action="Dashboard">ELEVATED TUTORS</a>
+        }
+        else
+        {
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">ELEVATED TUTORS</a>
+        }
+
+        <!-- MOBILE TOGGLE -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#roleNav" aria-controls="roleNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- LINKS (RIGHT) -->
+        <div class="collapse navbar-collapse justify-content-end" id="roleNav">
+            <ul class="navbar-nav align-items-lg-center">
+                @if (role == "Admin")
+                {
+                    <li class="nav-item"><a class="nav-link" asp-controller="Admin" asp-action="Dashboard">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Admin" asp-action="PendingUsers">Pending Users</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Admin" asp-action="AccountPermissions">Permissions</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Admin" asp-action="Notifications">Notifications</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Admin" asp-action="Payroll">Payroll</a></li>
+                }
+                else if (role == "Tutor")
+                {
+                    <li class="nav-item"><a class="nav-link" asp-controller="Tutor" asp-action="Dashboard">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Tutor" asp-action="Sessions">Sessions</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Tutor" asp-action="Calendar">Calendar</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Tutor" asp-action="Submissions">Submissions</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Tutor" asp-action="Planner">Planner</a></li>
+                }
+                else if (role == "Student")
+                {
+                    <li class="nav-item"><a class="nav-link" asp-controller="Student" asp-action="Dashboard">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Student" asp-action="Classes">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Student" asp-action="Schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Student" asp-action="Report">Report</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Student" asp-action="ContactUs">Contact</a></li>
+                }
+                else
+                {
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-links" asp-controller="Home" asp-action="Index" asp-fragment="about">About</a></li>
+                    <li class="nav-item"><a class="nav-link nav-links" asp-controller="Home" asp-action="Index" asp-fragment="testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index" asp-fragment="faq">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index" asp-fragment="reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="ContactUs">ContactUs</a></li>
+                    <p  class="divider" style="margin-inline:10px; align-content:center; align-items:center; justify-content:center; justify-items:center; margin-bottom:0;">|</p>
+                    <li class="nav-item"><a class="nav-link" asp-area="Identity" asp-page="/Account/Register"><button type="submit" class="btn btn-outline-primary btn-sm">Register</button></a></li>
+                    <li class="nav-item"><a class="nav-link" asp-area="Identity" asp-page="/Account/Login"><button type="submit" class="btn btn-outline-dark btn-sm">Login</button></a></li>
+                    
+
+                }
+
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <li class="nav-item ms-3">
+                        <form asp-area="Identity" asp-page="/Account/Logout" method="post" class="d-flex">
+                            <button type="submit" class="btn btn-outline-light btn-sm">
+                                <i class="bi bi-box-arrow-right"></i> Logout
+                            </button>
+                        </form>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Scroll-based background color activation -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const navbar = document.getElementById('roleNavbar');
+        const color = "@baseColor";
+        navbar.style.setProperty('--navbar-color', color);
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    });
+</script>

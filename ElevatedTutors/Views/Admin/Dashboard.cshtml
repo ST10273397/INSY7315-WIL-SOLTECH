@@ -1,0 +1,106 @@
+﻿@model ElevatedTutors.Models.AdminDashboardViewModel
+@{
+    ViewData["Title"] = "Admin Dashboard";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="admin-dashboard">
+    <h1 class="dashboard-title">Admin Dashboard</h1>
+    <div class="dashboard-header">
+        <div class="dashboard-controls">
+            <span id="lastUpdated">Last updated: @DateTime.Now.ToString("HH:mm")</span>
+            <button id="refreshBtn" class="btn-refresh">
+                <i class="bi bi-arrow-repeat"></i> Refresh
+            </button>
+        </div>
+    </div>
+    
+
+    <div class="dashboard-cards">
+        <div class="card total">
+            <h3>Total Members</h3>
+            <p class="counter" data-key="totalMembers" data-target="@Model.TotalMembers">0</p>
+        </div>
+
+        <div class="card tutors">
+            <h3>Tutors</h3>
+            <p class="counter" data-key="tutorCount" data-target="@Model.TutorCount">0</p>
+        </div>
+
+        <div class="card students">
+            <h3>Students</h3>
+            <p class="counter" data-key="studentCount" data-target="@Model.StudentCount">0</p>
+        </div>
+
+        <div class="card pending">
+            <h3>Pending Users</h3>
+            <p class="counter" data-key="pendingCount" data-target="@Model.PendingUsersCount">0</p>
+            <a asp-controller="Admin" asp-action="PendingUsers" class="btn-view">View Pending</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const speed = 250;
+
+        function animateCounters(data) {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const newValue = data[counter.dataset.key];
+
+                counter.setAttribute('data-target', newValue);
+                counter.innerText = '0';
+
+                const increment = Math.ceil(newValue / speed);
+                const update = () => {
+                    const current = +counter.innerText;
+                    if (current < newValue) {
+                        counter.innerText = current + increment;
+                        setTimeout(update, 10);
+                    } else {
+                        counter.innerText = newValue;
+                    }
+                };
+                update();
+            });
+        }
+
+        // Initialize with existing values
+        document.addEventListener("DOMContentLoaded", () => animateCounters({
+            totalMembers: @Model.TotalMembers,
+            tutorCount: @Model.TutorCount,
+            studentCount: @Model.StudentCount,
+            pendingCount: @Model.PendingUsersCount
+        }));
+
+        // Refresh button logic
+        document.getElementById("refreshBtn").addEventListener("click", async () => {
+            const btn = document.getElementById("refreshBtn");
+            btn.disabled = true;
+            btn.innerHTML = '<i class="bi bi-arrow-repeat spin"></i> Refreshing...';
+
+            try {
+                const response = await fetch('/Admin/GetDashboardStats');
+                if (!response.ok) throw new Error('Network error');
+                const data = await response.json();
+
+                document.querySelector('[data-key="totalMembers"]').setAttribute('data-target', data.totalMembers);
+                document.querySelector('[data-key="tutorCount"]').setAttribute('data-target', data.tutorCount);
+                document.querySelector('[data-key="studentCount"]').setAttribute('data-target', data.studentCount);
+                document.querySelector('[data-key="pendingCount"]').setAttribute('data-target', data.pendingCount);
+
+                animateCounters(data);
+                document.getElementById("lastUpdated").innerText = "Last updated: " + data.updatedAt;
+            } catch (err) {
+                alert("Error fetching updated stats.");
+                console.error(err);
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = '<i class="bi bi-arrow-repeat"></i> Refresh';
+            }
+        });
+    </script>
+}
+
