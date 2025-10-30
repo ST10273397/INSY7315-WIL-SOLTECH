@@ -1,0 +1,140 @@
+﻿@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Welcome to Elevated Tutors</h1>
+        <p>Your academic success starts with us. Learn from the best tutors and elevate your learning journey today!</p>
+        <a href="/Identity/Account/Register" class="enroll-btn">Enroll Now</a>
+    </div>
+    <div class="hero-image">
+        <img src="/images/Learning.gif" alt="Tutoring session">
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        Elevated Tutors are not just tutors, they’re the big sibling that students didn’t know they needed. Their mission is to help students and young adults reach academic goals while guiding them toward a greater sense of self and purpose. Whether it’s acing the next exam, exploring future careers, or defining what success looks like on a personal level, Elevated tutors are there every step of the way. Combining tutoring with mentorship and coaching, they use modern tools and a personalized approach to support each student’s unique journey. More than just grades, their focus is on growth in the areas of academics, personal, and beyond. With a blend of intelligence, heart, and strategy, they help build futures as ambitious as the students they serve.
+    </p>
+    <div class="about">
+
+        <img src="/images/Learning.gif" alt="About Elevated Tutors">
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+    <h2>What Our Tutors Say</h2>
+    <div class="testimonial-wrapper">
+        <div class="testimonial-track" id="testimonialTrack">
+            <div class="testimonial">
+                <p>“Working with Elevated Tutors has been a rewarding experience. The platform truly values both students and tutors.”</p>
+                <span>- Sarah M., Math Tutor</span>
+            </div>
+            <div class="testimonial">
+                <p>“I love the flexible scheduling and the impact I get to make on students’ lives every week.”</p>
+                <span>- James L., Science Tutor</span>
+            </div>
+            <div class="testimonial">
+                <p>“The best tutoring platform I’ve worked with — supportive team and great learners!”</p>
+                <span>- Aisha K., English Tutor</span>
+            </div>
+            <div class="testimonial">
+                <p>“A great way to connect with motivated learners while managing my own time.”</p>
+                <span>- Daniel P., History Tutor</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="faq" id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-grid">
+        <div class="faq-item">
+            <button class="faq-question">How do I register?</button>
+            <div class="faq-answer">Click “Enroll Now” and fill out the registration form.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Can I choose my tutor?</button>
+            <div class="faq-answer">Yes! You can select from a list of available tutors after registering.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Are the sessions online or in-person?</button>
+            <div class="faq-answer">We offer both online and in-person tutoring options to fit your schedule.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Do you provide progress reports?</button>
+            <div class="faq-answer">Yes, tutors provide regular progress feedback for students and parents.</div>
+        </div>
+    </div>
+</section>
+
+<!-- STUDENT REVIEWS -->
+<section class="reviews" id="reviews">
+    <h2>What Students Say</h2>
+    <div class="review-container">
+        <div class="review">
+            <p>“Elevated Tutors helped me boost my math grade from 60% to 85%! Highly recommended.”</p>
+            <span>- Thabo, Student</span>
+        </div>
+        <div class="review">
+            <p>“The lessons are engaging and personalized. My tutor always makes sure I understand before moving on.”</p>
+            <span>- Zanele, Student</span>
+        </div>
+        <div class="review">
+            <p>“I gained confidence and better study habits thanks to my tutor!”</p>
+            <span>- Lerato, Student</span>
+        </div>
+    </div>
+</section>
+
+<script>
+
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+        let fromTop = window.scrollY + 100;
+
+        navLinks.forEach(link => {
+            const section = document.querySelector(link.hash);
+            if (section && section.offsetTop <= fromTop &&
+                section.offsetTop + section.offsetHeight > fromTop) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    });
+
+    // FAQ toggle
+     document.querySelectorAll(".faq-question").forEach(button => {
+        button.addEventListener("click", () => {
+            const answer = button.nextElementSibling;
+            button.classList.toggle("active");
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        });
+    });
+
+    // Testimonials auto-scroll
+     const track = document.getElementById("testimonialTrack");
+    let scrollX = 0;
+    setInterval(() => {
+        scrollX += 350;
+        if (scrollX >= track.scrollWidth - track.clientWidth) {
+            scrollX = 0;
+        }
+        track.scrollTo({
+            left: scrollX,
+            behavior: "smooth"
+        });
+    }, 3500);
+</script>

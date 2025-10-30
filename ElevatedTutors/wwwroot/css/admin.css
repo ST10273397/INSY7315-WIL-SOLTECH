@@ -1,0 +1,154 @@
+﻿/* ---------- ADMIN DASHBOARD ---------- */
+.admin-dashboard {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.dashboard-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #1b263b;
+}
+
+.dashboard-controls {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    gap: 1rem;
+    font-size: 0.95rem;
+    margin-bottom:20px;
+}
+
+#lastUpdated {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.btn-refresh {
+    background: #007bff;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+    .btn-refresh:hover {
+        background: #0056b3;
+    }
+
+    .btn-refresh:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+
+    .btn-refresh .spin {
+        display: inline-block;
+        animation: spin 1s linear infinite;
+    }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 260px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+    .card h3 {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    /* color accents */
+    .card.total {
+        border-top: 5px solid #0078ff;
+    }
+
+    .card.tutors {
+        border-top: 5px solid #28a745;
+    }
+
+    .card.students {
+        border-top: 5px solid #17a2b8;
+    }
+
+    .card.pending {
+        border-top: 5px solid #ffc107;
+    }
+
+.btn-view {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #0078ff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+    .btn-view:hover {
+        background-color: #005fcc;
+    }
+
+.counter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #1b263b;
+    transition: transform 0.2s ease-in-out;
+}
+
+    .counter.updated {
+        transform: scale(1.1);
+    }
+
+
+@media (max-width: 768px) {
+    .dashboard-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+}

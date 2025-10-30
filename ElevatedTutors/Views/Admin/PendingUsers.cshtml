@@ -1,0 +1,146 @@
+﻿@model IEnumerable<ElevatedTutors.Models.ApplicationUser>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Pending User Approvals";
+}
+
+<h2 class="mt-3 mb-4 text-center">Pending User Approvals</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info text-center">
+        No pending users awaiting approval.
+
+    </div>
+    <div style="display:flex; justify-content:center; align-items:center">
+        <img src="~/images/shrug.gif" />
+
+    </div>
+}
+else
+{
+    <table class="table table-hover align-middle shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>Email</th>
+                <th>Username</th>
+                <th>Role</th>
+                <th style="width:400px;">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                var role = user.Role ?? "Unassigned"; // (optional property we'll handle)
+                <tr>
+                    <td>@user.Email</td>
+                    <td>@user.UserName</td>
+                    <td>
+                        <span class="badge bg-secondary">@role</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#viewModal-@user.Id">
+                            <i class="bi bi-eye"></i> View
+                        </button>
+                        <button class="btn btn-warning btn-sm me-1" data-bs-toggle="modal" data-bs-target="#editModal-@user.Id">
+                            <i class="bi bi-pencil-square"></i> Edit
+                        </button>
+                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal-@user.Id">
+                            <i class="bi bi-trash"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+
+                <!-- View Modal -->
+                <div class="modal fade" id="viewModal-@user.Id" tabindex="-1" aria-labelledby="viewModalLabel-@user.Id" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-primary text-white">
+                                <h5 class="modal-title" id="viewModalLabel-@user.Id">View User</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Email:</strong> @user.Email</p>
+                                <p><strong>Username:</strong> @user.UserName</p>
+                                <p><strong>Current Role:</strong> @role</p>
+                                <p><strong>Approved:</strong> @(user.IsApproved ? "Yes" : "No")</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit Modal -->
+                <div class="modal fade" id="editModal-@user.Id" tabindex="-1" aria-labelledby="editModalLabel-@user.Id" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form asp-action="Approve" method="post">
+                                <div class="modal-header bg-warning text-dark">
+                                    <h5 class="modal-title" id="editModalLabel-@user.Id">Edit Role for @user.UserName</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                            <input type="hidden" name="id" value="@user.Id" />
+                                    <div class="mb-3">
+                                        <label class="form-label">Select Role</label>
+                                        <select name="role" class="form-select">
+                                <option value="Tutor">Tutor</option>
+                                <option value="Student">Student</option>
+                            </select>
+                                    </div>
+                                    <p class="text-muted small">This user will be marked as approved after role assignment.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-success">Save Changes</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                            
+                <!-- Delete Modal -->
+                <div class="modal fade" id="deleteModal-@user.Id" tabindex="-1" aria-labelledby="deleteModalLabel-@user.Id" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form asp-action="DeleteUser" method="post">
+                                <div class="modal-header bg-danger text-white">
+                                    <h5 class="modal-title" id="deleteModalLabel-@user.Id">Confirm Delete</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="hidden" name="id" value="@user.Id" />
+                                    <p>Are you sure you want to delete <strong>@user.Email</strong>? This action cannot be undone.</p>
+                                    <p>Type <strong>DELETE</strong> to confirm:</p>
+                                    <input type="text" name="confirmText" class="form-control" required />
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        </tbody>
+    </table>
+}
+
+@section Scripts {
+    <script>
+        // Prevent accidental deletes without typing "DELETE"
+        document.querySelectorAll('form[asp-action="DeleteUser"]').forEach(form => {
+            form.addEventListener('submit', e => {
+                const input = form.querySelector('input[name="confirmText"]');
+                if (input.value.trim().toUpperCase() !== "DELETE") {
+                    e.preventDefault();
+                    alert("You must type DELETE to confirm.");
+                }
+            });
+        });
+    </script>
+}
