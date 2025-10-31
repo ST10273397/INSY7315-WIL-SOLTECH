@@ -17,165 +17,165 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ElevatedTutors
 build_property.RootNamespace = ElevatedTutors
-build_property.ProjectDir = C:\Users\nicho\OneDrive\Documents\GitHub\INSY7315-WIL-SOLTECH\ElevatedTutors\
+build_property.ProjectDir = C:\Users\lab_services_student\Source\Repos\INSY7315-WIL-SOLTECH\ElevatedTutors\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\nicho\OneDrive\Documents\GitHub\INSY7315-WIL-SOLTECH\ElevatedTutors
+build_property.MSBuildProjectDirectory = C:\Users\lab_services_student\Source\Repos\INSY7315-WIL-SOLTECH\ElevatedTutors
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/Account/WaitingApproval.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/Account/WaitingApproval.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxXYWl0aW5nQXBwcm92YWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Admin/AccountPermissions.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Admin/AccountPermissions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWNjb3VudFBlcm1pc3Npb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Admin/Approve.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Admin/Approve.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXBwcm92ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Admin/Dashboard.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Admin/Notifications.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Admin/Notifications.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTm90aWZpY2F0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Admin/Payroll.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Admin/Payroll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGF5cm9sbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Admin/PendingUsers.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Admin/PendingUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGVuZGluZ1VzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Home/ContactUs.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Home/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Home/Index.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Home/PendingApproval.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Home/PendingApproval.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZW5kaW5nQXBwcm92YWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Home/Privacy.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/Error.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_RoleNavbar.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_RoleNavbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Sb2xlTmF2YmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_StudentLayout.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_StudentLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdHVkZW50TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_TutorLayout.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_TutorLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UdXRvckxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Student/Classes.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Student/Classes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDbGFzc2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Student/ContactUs.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Student/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDb250YWN0VXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Student/Dashboard.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Student/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Student/Report.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Student/Report.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxSZXBvcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Student/Schedule.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Student/Schedule.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxTY2hlZHVsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Tutor/Calendar.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Tutor/Calendar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JcQ2FsZW5kYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Tutor/Dashboard.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Tutor/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Tutor/Index.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Tutor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Tutor/Planner.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Tutor/Planner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JcUGxhbm5lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Tutor/Sessions.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Tutor/Sessions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JcU2Vzc2lvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Tutor/Submissions.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Tutor/Submissions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JcU3VibWlzc2lvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/_ViewImports.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/_ViewStart.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicho/OneDrive/Documents/GitHub/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_Layout.cshtml]
+[C:/Users/lab_services_student/Source/Repos/INSY7315-WIL-SOLTECH/ElevatedTutors/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hx7pb3egat
