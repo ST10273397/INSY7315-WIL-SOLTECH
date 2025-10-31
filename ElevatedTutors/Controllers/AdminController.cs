@@ -1,4 +1,5 @@
-﻿using ElevatedTutors.Models;
+﻿using ElevatedTutors.Data;
+using ElevatedTutors.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,9 +12,11 @@ namespace ElevatedTutors.Controllers
     public class AdminController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
-        public AdminController(UserManager<ApplicationUser> userManager)
+        private readonly ApplicationDbContext _context;
+        public AdminController(UserManager<ApplicationUser> userManager, ApplicationDbContext dbContext)
         {
             _userManager = userManager;
+            _context = dbContext;
         }
         public async Task<IActionResult> PendingUsers()
         {
@@ -33,19 +36,47 @@ namespace ElevatedTutors.Controllers
 
         public async Task<IActionResult> Approve(string id, string role)
         {
-
             var user = await _userManager.FindByIdAsync(id);
             if (user == null) return NotFound();
 
             user.IsApproved = true;
-            var updateRes = await _userManager.UpdateAsync(user);
-            if (!await _userManager.IsInRoleAsync(user, role))
+            using var transaction = await _context.Database.BeginTransactionAsync();
+
+            try
             {
-                await _userManager.AddToRoleAsync(user, role);
+                if (!await _context.Roles.AnyAsync(r => r.Name == role))
+                {
+                    TempData["Error"] = $"Role '{role}' does not exist.";
+                    return RedirectToAction(nameof(PendingUsers));
+                }
+
+                await _userManager.UpdateAsync(user);
+                if (!await _userManager.IsInRoleAsync(user, role))
+                {
+                    await _userManager.AddToRoleAsync(user, role);
+
+                    switch (role)
+                    {
+                        case "Student": _context.StudentUsers.Add(new StudentUser { UserId = user.Id }); break;
+                        case "Tutor": _context.TutorUsers.Add(new TutorUser { UserId = user.Id }); break;
+                        case "Admin": _context.AdminUsers.Add(new AdminUser { UserId = user.Id }); break;
+                    }
+
+                    await _context.SaveChangesAsync();
+                }
+
+                await transaction.CommitAsync();
+                TempData["Success"] = "User has been approved successfully!";
+            }
+            catch
+            {
+                await transaction.RollbackAsync();
+                TempData["Error"] = "An error occurred while approving the user.";
             }
 
             return RedirectToAction(nameof(PendingUsers));
         }
+
 
         public async Task<IActionResult> Dashboard()
         {
@@ -146,6 +177,18 @@ namespace ElevatedTutors.Controllers
                 await _userManager.RemoveFromRoleAsync(user, r);
             }
 
+            var student = await _context.StudentUsers.FirstOrDefaultAsync(s => s.UserId == id);
+            if (student != null) _context.StudentUsers.Remove(student);
+
+            var tutor = await _context.TutorUsers.FirstOrDefaultAsync(t => t.UserId == id);
+            if (tutor != null) _context.TutorUsers.Remove(tutor);
+
+            var admin = await _context.AdminUsers.FirstOrDefaultAsync(a => a.UserId == id);
+            if (admin != null) _context.AdminUsers.Remove(admin);
+
+            await _context.SaveChangesAsync();
+
+
             await _userManager.DeleteAsync(user);
 
             TempData["Message"] = "User deleted.";
@@ -160,38 +203,42 @@ namespace ElevatedTutors.Controllers
 
             var currentRoles = await _userManager.GetRolesAsync(user);
             await _userManager.RemoveFromRolesAsync(user, currentRoles);
-
-            if (!string.IsNullOrEmpty(role))
-                await _userManager.AddToRoleAsync(user, role);
-
             user.IsApproved = true;
+
+            // Remove existing role entities
+            var student = await _context.StudentUsers.FirstOrDefaultAsync(s => s.UserId == user.Id);
+            if (student != null) _context.StudentUsers.Remove(student);
+
+            var tutor = await _context.TutorUsers.FirstOrDefaultAsync(t => t.UserId == user.Id);
+            if (tutor != null) _context.TutorUsers.Remove(tutor);
+
+            var admin = await _context.AdminUsers.FirstOrDefaultAsync(a => a.UserId == user.Id);
+            if (admin != null) _context.AdminUsers.Remove(admin);
+
+            // Now assign the new role
+            if (!string.IsNullOrEmpty(role))
+            {
+                await _userManager.AddToRoleAsync(user, role);
+                switch (role)
+                {
+                    case "Student":
+                        _context.StudentUsers.Add(new StudentUser { UserId = user.Id });
+                        break;
+                    case "Tutor":
+                        _context.TutorUsers.Add(new TutorUser { UserId = user.Id });
+                        break;
+                    case "Admin":
+                        _context.AdminUsers.Add(new AdminUser { UserId = user.Id });
+                        break;
+                }
+            }
+
+            await _context.SaveChangesAsync();
             await _userManager.UpdateAsync(user);
+
 
             TempData["SuccessMessage"] = "User role updated successfully.";
             return RedirectToAction(nameof(AccountPermissions));
         }
-
-        [HttpPost]
-        public async Task<IActionResult> DeleteAUser(string id, string confirmText)
-        {
-            if (confirmText?.ToUpper() != "DELETE")
-                return RedirectToAction(nameof(PendingUsers));
-
-            var user = await _userManager.FindByIdAsync(id);
-            if (user == null) return NotFound();
-
-            var result = await _userManager.DeleteAsync(user);
-            if (!result.Succeeded)
-            {
-                ModelState.AddModelError("", "Failed to delete user.");
-            }
-
-            return RedirectToAction(nameof(AccountPermissions));
-        }
-
-
-
     }
-
-
 }

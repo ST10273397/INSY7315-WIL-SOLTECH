@@ -102,3 +102,103 @@ else
 {
     <p class="text-muted">No students assigned yet.</p>
 }
+<h1>Tutor dashboard</h1>
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <!-- ===== LEFT HALF (60%) ===== -->
+        <div class="col-md-7 pe-4">
+            <!-- DASHBOARD TITLE -->
+            <h2 class="fw-bold mb-4">Dashboard</h2>
+
+            <!-- CURRENT SESSION CARD -->
+            <div class="card shadow-sm p-4 mb-4">
+                <h4 class="fw-semibold mb-3">Current Session</h4>
+                <div class="mb-3">
+                    <p><strong>Student Name:</strong> Hachiman Hikigaya</p>
+                    <p><strong>Subject:</strong> Mathematics</p>
+                    <p><strong>Session Length:</strong> 1 hour 30 minutes</p>
+                </div>
+
+                <div class="d-flex gap-3 mt-3">
+                    <button class="btn btn-success px-4">Start Session</button>
+                    <button class="btn btn-danger px-4">End Session</button>
+                </div>
+            </div>
+
+            <!-- UPCOMING SESSIONS -->
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="fw-semibold">Upcoming Sessions</h4>
+                <a href="#" class="text-decoration-none fw-semibold">See All</a>
+            </div>
+            <div class="mb-2 text-muted">14 Jul 2025</div>
+
+            <!-- Example session cards -->
+            <div class="card mb-2 p-3 shadow-sm">
+                <p class="mb-1 fw-semibold">Mathematics - Hachiman Hikigaya</p>
+                <small class="text-muted">Time: 14:00 - 15:30</small>
+            </div>
+            <div class="card mb-2 p-3 shadow-sm">
+                <p class="mb-1 fw-semibold">English - Yukino Yukinoshita</p>
+                <small class="text-muted">Time: 16:00 - 17:00</small>
+            </div>
+            <div class="card mb-2 p-3 shadow-sm">
+                <p class="mb-1 fw-semibold">Science - Yui Yuigahama</p>
+                <small class="text-muted">Time: 17:30 - 18:30</small>
+            </div>
+        </div>
+
+        <!-- ===== RIGHT HALF (40%) ===== -->
+        <div class="col-md-5 ps-4 border-start">
+            <!-- STUDENTS SECTION -->
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="fw-semibold">Students</h4>
+                <a href="#" class="text-decoration-none fw-semibold">See All</a>
+            </div>
+
+            <!-- 5 Student Cards -->
+            @for (int i = 1; i <= 5; i++)
+            {
+                <div class="card mb-2 p-3 shadow-sm">
+                    <p class="fw-semibold mb-1">Student @i - Sample Name</p>
+                    <small class="text-muted">Next Session: @(DateTime.Now.AddDays(i).ToString("dd MMM yyyy"))</small>
+                </div>
+            }
+
+            <!-- ANNOUNCEMENTS -->
+            <div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+                <h4 class="fw-semibold">Announcements</h4>
+                <a href="#" class="text-decoration-none fw-semibold">Create New</a>
+            </div>
+
+            <div class="card mb-2 p-3 shadow-sm">
+                <p class="mb-1">“Don’t forget to review your notes before tomorrow’s session.”</p>
+                <small class="text-muted">Posted: 13 Jul 2025</small>
+            </div>
+            <div class="card mb-4 p-3 shadow-sm">
+                <p class="mb-1">“Reminder: Midterm tasks are due next week.”</p>
+                <small class="text-muted">Posted: 12 Jul 2025</small>
+            </div>
+
+            <!-- TASKS SECTION -->
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="fw-semibold">Tasks</h4>
+                <a href="#" class="text-decoration-none fw-semibold">See All</a>
+            </div>
+
+            <!-- 6 Task Cards -->
+            @for (int i = 1; i <= 6; i++)
+            {
+                <div class="card mb-2 p-3 shadow-sm">
+                    <p class="fw-semibold mb-1">Task @i - Homework Assignment</p>
+                    <small class="text-muted">Due Date: @(DateTime.Now.AddDays(i).ToString("dd MMM yyyy"))</small>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="text-center mt-5">
+        <small class="text-muted">©2025 ELEVATED TUTORS. All rights reserved</small>
+    </div>
+</div>
