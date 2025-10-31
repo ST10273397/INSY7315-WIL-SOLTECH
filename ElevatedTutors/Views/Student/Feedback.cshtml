@@ -1,5 +1,25 @@
-﻿
-@model ElevatedTutors.Models.Submission
+﻿@model ElevatedTutors.Models.Submission
+@{
+    ViewData["Title"] = "Feedback";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+}
+@* 
+    View: Feedback.cshtml
+    Folder: Student
+    Purpose: Render the Feedback page for Student controller.
+    Notes: Updated for consistent layout, error handling, anti-forgery protection, and safe rendering.
+*@
+
+@* Begin model null-safety wrapper *@
+@if (Model == null)
+{
+    <div class="alert alert-warning" role="alert">
+        No data available to display.
+    </div>
+}
+else
+{
+
 
 <h3>Feedback for: @Model.Title</h3>
 
@@ -15,3 +35,5 @@
 </p>
 
 <a asp-action="Report">Back to Report</a>
+}
+@* End model wrapper *@

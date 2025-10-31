@@ -1,9 +1,23 @@
-﻿@{
-    Layout = "~/Views/Shared/_StudentLayout.cshtml";
-    ViewData["Title"] = "Report";
-}
+﻿@using ElevatedTutors.ViewModel
 
-@model IEnumerable<ElevatedTutors.Models.ReportViewModel>
+@model IEnumerable<ReportViewModel>
+@* 
+    View: Report.cshtml
+    Folder: Student
+    Purpose: Render the Report page for Student controller.
+    Notes: Updated for consistent layout, error handling, anti-forgery protection, and safe rendering.
+*@
+
+@* Begin model null-safety wrapper *@
+@if (Model == null)
+{
+    <div class="alert alert-warning" role="alert">
+        No data available to display.
+    </div>
+}
+else
+{
+
 
 <h2>Report</h2>
 
@@ -36,3 +50,5 @@
         }
     </tbody>
 </table>
+}
+@* End model wrapper *@

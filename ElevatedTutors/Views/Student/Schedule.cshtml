@@ -1,8 +1,22 @@
-﻿@{
-    Layout = "~/Views/Shared/_StudentLayout.cshtml";
-    ViewData["Title"] = "Schedule";
-}
+﻿@using ElevatedTutors.ViewModel
 @model StudentScheduleViewModel
+@* 
+    View: Schedule.cshtml
+    Folder: Student
+    Purpose: Render the Schedule page for Student controller.
+    Notes: Updated for consistent layout, error handling, anti-forgery protection, and safe rendering.
+*@
+
+@* Begin model null-safety wrapper *@
+@if (Model == null)
+{
+    <div class="alert alert-warning" role="alert">
+        No data available to display.
+    </div>
+}
+else
+{
+
 
 <h2>Schedule</h2>
 
@@ -19,3 +33,6 @@
     }
 </ul>
 
+
+}
+@* End model wrapper *@

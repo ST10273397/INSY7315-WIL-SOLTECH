@@ -1,6 +1,6 @@
 ﻿using ElevatedTutors.Models;
 
-namespace ElevatedTutors.ViewModels
+namespace ElevatedTutors.ViewModel
 {
     public class TutorSessionsViewModel
     {

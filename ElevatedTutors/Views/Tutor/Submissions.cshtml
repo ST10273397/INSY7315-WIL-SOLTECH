@@ -1,11 +1,25 @@
-﻿@{
-    Layout = "~/Views/Shared/_TutorLayout.cshtml";
-    ViewData["Title"] = "Submissions";
-}
+﻿@using ElevatedTutors.ViewModel
 
 
 @model List<TutorSubmissionViewModel>
-@{
+@* 
+    View: Submissions.cshtml
+    Folder: Tutor
+    Purpose: Render the Submissions page for Tutor controller.
+    Notes: Updated for consistent layout, error handling, anti-forgery protection, and safe rendering.
+*@
+
+@* Begin model null-safety wrapper *@
+@if (Model == null)
+{
+    <div class="alert alert-warning" role="alert">
+        No data available to display.
+    </div>
+}
+else
+{
+
+{
     Layout = "~/Views/Shared/_TutorLayout.cshtml";
     ViewData["Title"] = "Task Submissions";
 }
@@ -97,7 +111,8 @@
 
                 <!-- edit marks form -->
                 <form id="editMarksForm" method="post" asp-action="UpdateMarks" asp-controller="Tutor" class="d-none">
-                    <input type="hidden" id="editSubmissionId" name="submissionId" />
+    @Html.AntiForgeryToken()
+<input type="hidden" id="editSubmissionId" name="submissionId" />
                     <div class="mb-3">
                         <label class="form-label">New Grade</label>
                         <input type="number" id="editGrade" name="grade" class="form-control" required />
@@ -108,7 +123,8 @@
 
                 <!-- feedback form -->
                 <form id="feedbackForm" method="post" asp-action="UpdateFeedback" asp-controller="Tutor" class="d-none">
-                    <input type="hidden" id="feedbackSubmissionId" name="submissionId" />
+    @Html.AntiForgeryToken()
+<input type="hidden" id="feedbackSubmissionId" name="submissionId" />
                     <div class="mb-3">
                         <label class="form-label">Feedback</label>
                         <textarea id="editFeedback" name="notes" class="form-control" rows="4" required></textarea>
@@ -131,3 +147,5 @@
 @section Scripts {
     <script src="~/js/tutor-submissions.js"></script>
 }
+}
+@* End model wrapper *@

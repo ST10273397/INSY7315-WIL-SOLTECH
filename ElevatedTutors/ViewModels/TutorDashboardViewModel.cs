@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ElevatedTutors.ViewModels
+namespace ElevatedTutors.ViewModel
 {
     public class TutorDashboardViewModel
     {

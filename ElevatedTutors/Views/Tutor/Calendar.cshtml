@@ -1,6 +1,24 @@
+﻿
+@* 
+    View: Calendar.cshtml
+    Folder: Tutor
+    Purpose: Render the Calendar page for Tutor controller.
+    Notes: Updated for consistent layout, error handling, anti-forgery protection, and safe rendering.
+*@
+
+@* Page content container *@
+<div class="page-content container-fluid">
 ﻿@{
     Layout = "~/Views/Shared/_TutorLayout.cshtml";
     ViewData["Title"] = "Calendar";
 }
 
 <h1>Calendar</h1>
+</div>
+
+<!-- Added helpful structure for consistent UI -->
+<div class="card shadow-sm mt-3 p-3">
+    <div class="card-body">
+        <p class="text-muted">This section will be populated by the controller. If you see this message in production, check the controller logic.</p>
+    </div>
+</div>

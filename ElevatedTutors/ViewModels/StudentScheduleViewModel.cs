@@ -1,7 +1,7 @@
 ﻿using ElevatedTutors.Models;
 using System.Collections.Generic;
 
-namespace ElevatedTutors.Models
+namespace ElevatedTutors.ViewModel
 {
     public class StudentScheduleViewModel
     {

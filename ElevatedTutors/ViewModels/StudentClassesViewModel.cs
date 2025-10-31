@@ -1,4 +1,6 @@
-﻿namespace ElevatedTutors.Models
+﻿using ElevatedTutors.Models;
+
+namespace ElevatedTutors.ViewModel
 {
     public class StudentClassesViewModel
     {

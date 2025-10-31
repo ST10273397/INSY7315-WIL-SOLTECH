@@ -1,4 +1,4 @@
-﻿namespace ElevatedTutors.Models
+﻿namespace ElevatedTutors.ViewModel
 {
     public class AdminDashboardViewModel
     {

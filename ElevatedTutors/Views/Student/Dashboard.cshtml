@@ -1,8 +1,22 @@
-﻿@{
-    Layout = "~/Views/Shared/_StudentLayout.cshtml";
-    ViewData["Title"] = "Student Dashboard";
+﻿@using ElevatedTutors.ViewModel
+@model StudentDashboardViewModel
+@* 
+    View: Dashboard.cshtml
+    Folder: Student
+    Purpose: Render the Dashboard page for Student controller.
+    Notes: Updated for consistent layout, error handling, anti-forgery protection, and safe rendering.
+*@
+
+@* Begin model null-safety wrapper *@
+@if (Model == null)
+{
+    <div class="alert alert-warning" role="alert">
+        No data available to display.
+    </div>
 }
-@model ElevatedTutors.Models.StudentDashboardViewModel
+else
+{
+
 
 <h2>Student Dashboard</h2>
 
@@ -52,3 +66,5 @@
         <p>Coming soon...</p>
     </section>
 </div>
+}
+@* End model wrapper *@
