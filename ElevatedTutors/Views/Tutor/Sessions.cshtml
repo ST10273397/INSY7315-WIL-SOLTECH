@@ -2,4 +2,37 @@
     Layout = "~/Views/Shared/_TutorLayout.cshtml";
     ViewData["Title"] = "Sessions";
 }
-<h1>Sessions</h1>
+@model List<ElevatedTutors.ViewModels.TutorSessionsViewModel>
+
+@{
+    Layout = "~/Views/Shared/_TutorLayout.cshtml";
+    ViewData["Title"] = "Tutor Sessions";
+}
+
+<h2>Sessions</h2>
+
+@foreach (var group in Model)
+{
+    <h3>@group.Date.ToString("dddd, MMMM dd, yyyy")</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Subject</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var session in group.Sessions)
+            {
+                <tr>
+                    <td>@session.StudentUser.User.FirstName @session.StudentUser.User.Surname</td>
+                    <td>@session.Subject.SubjectName</td>
+                    <td>@session.SessionDate.ToString("HH:mm")</td>
+                    @* <td>@session.EndTime.ToString("HH:mm")</td> *@
+                </tr>
+            }
+        </tbody>
+    </table>
+}

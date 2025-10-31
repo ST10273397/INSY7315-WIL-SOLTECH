@@ -1,0 +1,17 @@
+﻿
+@model ElevatedTutors.Models.Submission
+
+<h3>Feedback for: @Model.Title</h3>
+
+<p>
+    @if (string.IsNullOrWhiteSpace(Model.Notes))
+    {
+        <em>No feedback yet.</em>
+    }
+    else
+    {
+        @Model.Notes
+    }
+</p>
+
+<a asp-action="Report">Back to Report</a>
