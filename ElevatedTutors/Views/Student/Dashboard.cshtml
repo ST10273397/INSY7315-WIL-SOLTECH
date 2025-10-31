@@ -2,4 +2,53 @@
     Layout = "~/Views/Shared/_StudentLayout.cshtml";
     ViewData["Title"] = "Student Dashboard";
 }
-<h1>Student dashboard</h1>
+@model ElevatedTutors.Models.StudentDashboardViewModel
+
+<h2>Student Dashboard</h2>
+
+<div class="dashboard-container">
+    <section>
+        <h3>Your Classes</h3>
+        @if (Model.Classes.Any())
+        {
+            <ul>
+                @foreach (var c in Model.Classes)
+                {
+                    <li>
+                        <strong>@c.SubjectName</strong><br />
+                        @c.SubjectDesc
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No subjects assigned yet.</p>
+        }
+    </section>
+
+    <section>
+        <h3>Upcoming Due Dates</h3>
+        @if (Model.DueDates.Any())
+        {
+            <ul>
+                @foreach (var s in Model.DueDates)
+                {
+                    <li>
+                        <strong>@s.Title</strong> — @s.Subject.SubjectName
+                        <br />Due: @s.UploadDate.ToShortDateString()
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No submissions yet.</p>
+        }
+    </section>
+
+    <section>
+        <h3>Announcements</h3>
+        <p>Coming soon...</p>
+    </section>
+</div>

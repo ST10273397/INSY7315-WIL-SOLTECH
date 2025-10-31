@@ -2,5 +2,20 @@
     Layout = "~/Views/Shared/_StudentLayout.cshtml";
     ViewData["Title"] = "Schedule";
 }
+@model StudentScheduleViewModel
 
-<h1>Schedule</h1>
+<h2>Schedule</h2>
+
+
+
+<h3>Upcoming Due Dates</h3>
+<ul>
+    @foreach (var sub in Model.DueDates.OrderBy(d => d.UploadDate))
+    {
+        <li>
+            <strong>@sub.Title</strong> — @sub.Subject.SubjectName
+            <br />Due: @sub.UploadDate.ToShortDateString()
+        </li>
+    }
+</ul>
+

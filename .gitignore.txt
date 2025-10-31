@@ -1,0 +1,18 @@
+# Visual Studio temp files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+bin/
+obj/
+
+# Rider, VS Code, JetBrains
+.idea/
+.vscode/
+
+# Others
+*.dbmdl
+*.bak

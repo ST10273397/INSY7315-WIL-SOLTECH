@@ -1,5 +1,104 @@
-﻿@{
+﻿@model ElevatedTutors.ViewModels.TutorDashboardViewModel
+@{
     Layout = "~/Views/Shared/_TutorLayout.cshtml";
-    ViewData["Title"] = "Tutor dashboard";
+    ViewData["Title"] = "Tutor Dashboard";
 }
-<h1>Tutor dashboard</h1>
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["Message"]
+    </div>
+}
+<h2>Tutor Dashboard</h2>
+
+@if (Model.CurrentSession != null)
+{
+    <h3>Current Session</h3>
+    <div class="card mb-3 p-3 shadow-sm">
+        <p>
+            <strong>Student:</strong>
+            @Model.CurrentSession.StudentUser?.User?.FirstName
+            @Model.CurrentSession.StudentUser?.User?.Surname
+        </p>
+        <p>
+            <strong>Subject:</strong>
+            @Model.CurrentSession.Subject?.SubjectName
+        </p>
+        <p>
+            <strong>Session Length:</strong>
+            @Model.DefaultSessionLengthMinutes mins
+        </p>
+        <div class="mt-2">
+            <form method="post" asp-action="StartSession" asp-controller="Tutor" class="d-inline">
+                <input type="hidden" name="id" value="@Model.CurrentSession.SessionId" />
+                <button type="submit" class="btn btn-success">Start Session</button>
+            </form>
+
+            <form method="post" asp-action="EndSession" asp-controller="Tutor" class="d-inline">
+                <input type="hidden" name="id" value="@Model.CurrentSession.SessionId" />
+                <button type="submit" class="btn btn-danger">End Session</button>
+            </form>
+        </div>
+    </div>
+}
+else
+{
+    <p class="text-muted">No current session.</p>
+}
+
+<h3>Upcoming Sessions</h3>
+@if (Model.UpcomingSessionsGrouped != null && Model.UpcomingSessionsGrouped.Any())
+{
+    @foreach (var group in Model.UpcomingSessionsGrouped)
+    {
+        <h4 class="mt-4">@group.Key.ToShortDateString()</h4>
+        <table class="table table-bordered table-striped mb-4 shadow-sm">
+            <thead class="table-light">
+                <tr>
+                    <th>Session #</th>
+                    <th>Student</th>
+                    <th>Subject</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var session in group)
+                {
+                    <tr>
+                        <td>@session.SessionNumber</td>
+                        <td>
+                            @session.StudentUser?.User?.FirstName
+                            @session.StudentUser?.User?.Surname
+                        </td>
+                        <td>@session.Subject?.SubjectName</td>
+                        <td>
+                            @(session.Status == Session.SessionStatus.Scheduled ? "Scheduled" :
+                                            session.Status == Session.SessionStatus.Completed ? "Completed" : "Cancelled")
+            </td>
+        </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+else
+{
+    <p class="text-muted">No upcoming sessions.</p>
+}
+
+<h3>My Students</h3>
+@if (Model.Students != null && Model.Students.Any())
+{
+    <ul class="list-group">
+        @foreach (var student in Model.Students)
+        {
+            <li class="list-group-item">
+                @student.User?.FirstName @student.User?.Surname
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p class="text-muted">No students assigned yet.</p>
+}

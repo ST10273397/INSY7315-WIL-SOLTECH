@@ -3,4 +3,36 @@
     ViewData["Title"] = "Report";
 }
 
-<h1>Report</h1>
+@model IEnumerable<ElevatedTutors.Models.ReportViewModel>
+
+<h2>Report</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Subject</th>
+            <th>Submitted Files</th>
+            <th>Results</th>
+            <th>Submission status</th>
+            <th>Feedback</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var submission in Model)
+        {
+            <tr>
+                <td>@submission.Title</td>
+                <td>@submission.SubjectName</td>
+                <td>@submission.FileCount</td>
+                <td>@submission.Grade</td>
+                <td>@submission.Status</td>
+                <td>
+                    <a asp-action="Feedback" asp-route-id="@submission.SubmissionId">
+                        Feedback
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
