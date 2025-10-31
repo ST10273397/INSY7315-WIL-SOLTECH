@@ -22,10 +22,10 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Restore dependencies
-        run: dotnet restore ElevatedTutorsWebsite/ElevatedTutorsWebsite.csproj
+        run: dotnet restore ElevatedTutors/ElevatedTutors.csproj
 
       - name: Build project
-        run: dotnet build ElevatedTutorsWebsite/ElevatedTutorsWebsite.csproj --configuration Release --no-restore
+        run: dotnet build ElevatedTutors/ElevatedTutors.csproj --configuration Release --no-restore
 
       - name: Run tests
-        run: dotnet test ElevatedTutorsWebsite/ElevatedTutorsWebsite.csproj --no-build --verbosity normal
+        run: dotnet test ElevatedTutors/ElevatedTutors.csproj --no-build --verbosity normal
