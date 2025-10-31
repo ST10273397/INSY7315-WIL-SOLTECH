@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElevatedTutors")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1468b71738c07aeb9d513b1f1ce28048fcd1be36")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+135e9a164bc57165806c5c956980483eef41cc29")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElevatedTutors")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElevatedTutors")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -240,28 +240,5 @@ namespace ElevatedTutors.Controllers
             TempData["SuccessMessage"] = "User role updated successfully.";
             return RedirectToAction(nameof(AccountPermissions));
         }
-
-        [HttpPost]
-        public async Task<IActionResult> DeleteAUser(string id, string confirmText)
-        {
-            if (confirmText?.ToUpper() != "DELETE")
-                return RedirectToAction(nameof(PendingUsers));
-
-            var user = await _userManager.FindByIdAsync(id);
-            if (user == null) return NotFound();
-
-            var result = await _userManager.DeleteAsync(user);
-            if (!result.Succeeded)
-            {
-                ModelState.AddModelError("", "Failed to delete user.");
-            }
-
-            return RedirectToAction(nameof(AccountPermissions));
-        }
-
-
-
     }
-
-
 }

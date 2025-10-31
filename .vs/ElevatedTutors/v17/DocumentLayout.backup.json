@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1883A513-DEC2-4636-8414-1BCE473D04CD}|ElevatedTutors\\ElevatedTutors.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutors\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1883A513-DEC2-4636-8414-1BCE473D04CD}|ElevatedTutors\\ElevatedTutors.csproj|solutionrelative:elevatedtutors\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1883A513-DEC2-4636-8414-1BCE473D04CD}|ElevatedTutors\\ElevatedTutors.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\insy7315-wil-soltech\\elevatedtutors\\views\\admin\\accountpermissions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1883A513-DEC2-4636-8414-1BCE473D04CD}|ElevatedTutors\\ElevatedTutors.csproj|solutionrelative:elevatedtutors\\views\\admin\\accountpermissions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,26 +34,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountPermissions.cshtml",
-              "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutors\\Views\\Admin\\AccountPermissions.cshtml",
-              "RelativeDocumentMoniker": "ElevatedTutors\\Views\\Admin\\AccountPermissions.cshtml",
-              "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutors\\Views\\Admin\\AccountPermissions.cshtml",
-              "RelativeToolTip": "ElevatedTutors\\Views\\Admin\\AccountPermissions.cshtml",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-31T07:10:55.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutors\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "ElevatedTutors\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\INSY7315-WIL-SOLTECH\\ElevatedTutors\\Controllers\\AdminController.cs",
               "RelativeToolTip": "ElevatedTutors\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAtwOsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwOsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T06:32:57.756Z",
               "EditorCaption": ""
