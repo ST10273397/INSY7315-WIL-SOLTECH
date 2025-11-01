@@ -31,6 +31,13 @@ ElevatedTutors is a web-based tutoring management system developed for the INSY7
 
 ## TEAM MEMBERS
 Nicholas Wolfaardt – ST10273397
+
 Takudzwa Murwira – ST10392257
+
 Michel Musangu – ST10079108
+
 Michael Petersen – ST10261925
+
+## GitHub Link
+
+https://github.com/ST10273397/INSY7315-WIL-SOLTECH
